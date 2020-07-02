@@ -7,8 +7,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexChangeTextImpl implements ChangeText {
-    private final static String INCORRECT_LETTERS = "pa|Pa";
-    private final static String CORRECT_LETTERS = "po";
+    private final static String INCORRECT_LETTERS = "PA|Pa";
+    private final static String CORRECT_LETTERS = "PO";
     private final static String LETTER_IN_WORLD = "(?<=\\b\\S{%d})\\S";
     private final static String WORLD_BY_LENGTH = "\\b[\\p{Lower}\\p{Upper}]{%d}\\b";
 

@@ -22,7 +22,7 @@ public class RegexDeleteTextImpl implements DeleteText {
         Matcher matcher = pattern.matcher(text);
 
         text = matcher.replaceAll(EMPTY_STRING);
-        return text;
+        return text.trim();
     }
 
     @Override
@@ -33,6 +33,6 @@ public class RegexDeleteTextImpl implements DeleteText {
         Pattern pattern = Pattern.compile(PUNCTUATION);
         Matcher matcher = pattern.matcher(text);
         text = matcher.replaceAll(EMPTY_STRING);
-        return text;
+        return text.trim();
     }
 }
